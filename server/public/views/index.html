@@ -1,0 +1,33 @@
+<!--start mongo server w/ mongod set up database with robomongo
+set up all the mongoose server module magic -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Week 6</title>
+  <script src="../vendors/angular.min.js"></script>
+  <script src="../vendors/angular-route.min.js"></script>
+  <script src="../scripts/clientapp.js"></script>
+  <!--controllers-->
+  <script src="../scripts/factories/dataFactory.js"></script>
+  <script src="../scripts/homeController.js"></script>
+  <script src="../scripts/heroesController.js"></script>
+  <!-- skeleton and css -->
+  <link rel="stylesheet" href="/styles/normalize.css" />
+  <link rel="stylesheet" href="/styles/skeleton.css" />
+  <link rel="stylesheet" href="/styles/stylesheet.css" />
+</head>
+
+<body class="container" ng-app="app">
+
+  <div class="row">
+    <h1 class="four columns offset-by-four">Assessment Week 6</h1>
+  </div>
+
+  <div class="row">
+    <button class="four columns offset-by-two"><a href="#heroes">Heros</a></button>
+    <button class="four columns"><a href="#home">Home</a></button>
+  </div>
+
+  <main class="view" ng-view></main>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<div class="row">
+</div>
+
+<div class="row">
+</div>
+
+<container ng-repeat="hero in heroes">
+  <div class="row">
+    <div class="five columns">
+      <h3>Alias: {{hero.alias}}</h3>
+      <h3 class="name">Name: {{hero.first_name}} {{hero.last_name}}</h3>
+      <p class="">City: {{hero.city}}</p>
+      <p>Power: {{hero.power_name}}</p>
+      <button ng-click="removeHero(hero._id)">Remove Hero</button>
+    </div>
+  </div>
+</container>
